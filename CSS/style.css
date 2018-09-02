@@ -1,0 +1,522 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.error{
+  text-align: center;
+  color: red;
+  padding: 0;
+  margin: 0;
+}
+.success{
+  text-align: center;
+  color: #56B2B7;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'font1';
+  src: url('../fonts/headerFont.tff');
+  src: url('../fonts/headerFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'font2';
+  src: url('../fonts/paragraphFont.tff');
+  src: url('../fonts/paragraphFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body
+{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+
+
+
+header {
+
+  font-size: 17px;
+  color:white;
+  line-height: 1.6;
+
+
+}
+
+.footer
+{
+  text-align: center;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: relative;
+  width: 100%;
+}
+
+.footer-other
+{
+  text-align: center;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: relative;
+  width: 100%;
+  top:100vh;
+}
+
+#showcase {
+  background-image: url('../IMG/himchori1.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+
+
+  padding: 0 20px;
+
+
+}
+
+#showcase h1
+{
+  font-family: font2;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+#showcase p{
+
+  font-family: font1;
+  margin: 10px 0;
+
+}
+
+#showcase #signup
+{
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+
+
+
+}
+
+#showcase h1, #showcase #signup{
+  position: relative;
+  animation-name: header;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+
+
+}
+
+@keyframes header {
+  0%{top : -200px}
+  50%{top : 100px}
+  100%{top : 0px}
+}
+
+
+#showcase #signup #buttonSignUp
+{
+  text-decoration: none;
+  color: white;
+  border:1px solid white;
+  border-radius: 10px;
+}
+
+#buttonSignUp
+{
+  padding: 5px;
+  margin: 0px 10px;
+}
+
+
+#showcase #signup #buttonLogout
+{
+  text-decoration: none;
+  color: white;
+  border:1px solid white;
+  border-radius: 10px;
+}
+
+#buttonLogout
+{
+  padding: 5px;
+  margin: 0px 10px;
+}
+
+
+
+#showcase #signIn
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+
+  margin-top:  20vh;
+
+
+  opacity: 0;
+  animation-name: member;
+  animation-duration:2s;
+  animation-delay: 3s;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes member {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+
+}
+
+#showcase #signIn #buttonSignIn
+{
+
+  text-decoration: none;
+  color: white;
+  border:1px solid white;
+  border-radius: 10px;
+}
+
+#buttonSignIn
+  {
+    padding: 5px;
+    margin: 0px 10px;
+  }
+
+
+  #bodyContainer
+  {
+    display: flex;
+
+
+  }
+
+  #bodyContainer div{
+    padding: 10px;
+  }
+
+  #box-1
+  {
+    flex: 1;
+    background-color: #56B2B7;
+    color: white;
+    text-align: center;
+
+  }
+  #box-2
+  {
+    flex: 1;
+    background-color: white;
+    color:black;
+    text-align: center;
+
+  }
+  #box-3
+  {
+    flex: 1;
+    background-color: #56B2B7;
+    color: white;
+    text-align: center;
+
+  }
+
+  #box-1 a
+  {
+    text-decoration: none;
+    color: white;
+  }
+
+  #box-3 #sponser
+  {
+    list-style-type: square;
+    text-align:justify;
+    padding-left: 10px;
+  }
+
+
+
+  #buttonSignUp:hover
+  {
+    background-color: #00cec9;
+  }
+
+  #buttonLogout:hover
+  {
+    background-color: #00cec9;
+  }
+
+  #buttonSignIn:hover
+  {
+    background-color: #00cec9;
+  }
+
+
+  #navbarWrapper{
+
+  }
+
+  #navbar{
+    position: fixed;
+    width: 100%;
+
+
+    display: flex;
+    padding: 10px;
+
+
+
+    border-bottom: 2px solid  #00cec9;
+
+}
+
+#navbar:hover{
+  background-color:  #00cec9;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+#navbarItems li a:hover{
+
+  background-color: #fff;
+  color: #00cec9;
+  //color: black;
+  border-radius: 4px;
+  padding: 2px;
+  transition: .2s;
+}
+
+
+
+
+#navbar #logo{
+  flex: 1;
+  color: white;
+  padding: 0 10px;
+}
+
+#navbar #navbarItems{
+  flex: 1;
+
+}
+
+#navbarItems
+{
+  display: flex;
+  list-style-type: none;
+
+
+}
+
+
+
+#navbarItems li{
+  margin: auto;
+  padding: 0 10px;
+
+}
+
+#navbarItems a
+{
+  text-decoration: none;
+  color: white;
+
+}
+
+
+#logo{
+  display: flex;
+  align-items: center;
+
+}
+
+#logo img
+{
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+
+}
+
+#logo p{
+  font-family: font2;
+  font-size: 20px;
+  line-height: 5px;
+  letter-spacing: 2px;
+}
+
+
+#currentTab
+{
+  background-color: #00cec9;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px;
+
+}
+
+
+/*SIGN UP FORM */
+
+
+
+#Sign_Up_Body
+{
+  display: flex;
+  flex-direction: column;
+  //background-image: url("../IMG/pack5.png");
+
+
+
+  //background-repeat: no-repeat;
+  //background-position:center;
+  //background-size:cover;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  height: 100vh;
+  background-color:rgb(89, 95, 101);
+
+}
+
+
+.Subheader_Container
+{
+  position: relative;
+  top: 44px;
+  padding:0 10px;
+  background-color: white;
+  color: #00cec9;
+
+}
+
+
+#Registration
+{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#Registration #RegItems
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  margin:  10px;
+
+
+
+}
+
+#RegItems
+{
+
+}
+
+
+
+#Registration #RegItems img
+{
+
+  border: 2px solid white;
+  border-radius:2px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#Registration #RegItems label
+{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight:bolder;
+  margin-right: 10px;
+
+}
+
+#Registration #RegItems input
+{
+  margin-left: 15px;
+
+}
+
+#Registration #RegItems input[type=submit],input[type=button],input[type=reset]
+{
+
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #56B2B7;
+  border: 2px solid white ;
+  border-radius: 5px;
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bolder;
+  position: relative;
+
+
+
+}
+#Registration #RegItems input[type=button]:active ,input[type=reset]:active,input[type=submit]:active
+{
+  background-color: white;
+  color: #56B2B7;
+  border: 2px solid #56B2B7 ;
+}
+
+
+#Registration #CheckError p
+{
+  height:15px;
+  text-align: center;
+  color: red;
+  border: 2px solid #56B2B7 ;
+}
+
+
+#Sign_Up_Body #Registration #bookingFailed #gotoSignButton
+{
+  text-decoration: none;
+  color: white;
+  border:1px solid white;
+  border-radius: 10px;
+}
+
+#Sign_Up_Body #Registration #bookingFailed p
+{
+
+  height:15px;
+  font-size: 20px;
+  text-align: center;
+  color: red;
+
+
+}
+
+
+
+  #gotoSignButton:hover
+  {
+    background-color: #00cec9;
+  }
